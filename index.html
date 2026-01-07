@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>News & Blogs</title>
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a class="c-logo" href="#" onclick="reload()"><img src="./images/news.png" alt="Company-logo" /></a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+<li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+<li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input
+            type="text"
+            id="search-text"
+            class="news-input"
+            placeholder="e.g Science"
+          />
+          <button id="search-button" class="search-button">News</button>
+        </div>
+      </div>
+    </nav>
+
+
+    <main>
+      <div class="cards-container container flex" id="cards-container">
+        
+      </div>
+    </main>
+
+    <template id="temp-news">
+        <div class="card">
+          <div class="card-header">
+            <img src="https://via.placeholder.com/400x200" id="news-img" alt="News Image" />
+          </div>
+
+          <div class="card-content">
+            <h3 id="news-title">This is the Title</h3>
+            <h6  class="news-source" id="news-source">End Gadget · 26 Aug 2025</h6>
+            <p class="news-desc" id="news-desc">
+              Get accurate, timely, and reliable news updates from around the
+              world. From breaking headlines to in-depth analysis, we keep you
+              informed every day.
+            </p>
+          </div>
+        </div>
+    </template>
+  </body>
+</html>
